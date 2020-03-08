@@ -10,7 +10,7 @@ def get_ticket(email, password):
         'https://public-ubiservices.ubi.com/v3/profiles/sessions',
         headers={
             'Content-Type': 'application/json',
-            'Ubi-AppId': '39baebad-39e5-4552-8c25-2c9b919064e2',
+            'Ubi-AppId': rainbow_uuid,
             'Authorization': 'Basic ' + base64.b64encode(f'{email}:{password}'.encode('ascii')).decode('ascii')
         }
     )
@@ -24,7 +24,7 @@ def get_profile_stats(ticket, uuids):
         params={'profile_ids': ','.join(uuids)},
         headers={
             'Content-Type': 'application/json',
-            'Ubi-AppId': '39baebad-39e5-4552-8c25-2c9b919064e2',
+            'Ubi-AppId': rainbow_uuid,
             'Authorization': f'Ubi_v1 t={ticket}'
         }
     )
@@ -43,7 +43,7 @@ def get_ranked_stats(ticket, uuids):
         },
         headers={
             'Content-Type': 'application/json',
-            'Ubi-AppId': '39baebad-39e5-4552-8c25-2c9b919064e2',
+            'Ubi-AppId': rainbow_uuid,
             'Authorization': f'Ubi_v1 t={ticket}'
         }
     )
@@ -60,7 +60,7 @@ def get_all_stats(ticket, uuids):
         },
         headers={
             'Content-Type': 'application/json',
-            'Ubi-AppId': '39baebad-39e5-4552-8c25-2c9b919064e2',
+            'Ubi-AppId': rainbow_uuid,
             'Authorization': f'Ubi_v1 t={ticket}'
         }
     )
