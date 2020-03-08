@@ -21,9 +21,9 @@ class r6proc():
     def process_uuids(self, uuids):
         """
         Given an array of UUIDs of players, process them such that new players
-        are created with a new CSV and have their current status snapshot, else,
-        existing players have their current status checked with previous snapshot
-        and any different prompts their current status appended to the CSV.
+        are created with a new CSV and have their current status snapshot added,
+        else, existing players have their current status checked with previous
+        snapshot and any different prompts their current status appended to the CSV.
         """
 
         # collectively retrieve profile, ranked and overall stats for the UUIDs
