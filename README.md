@@ -1,4 +1,6 @@
 # r6proc
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSergeantSerk%2Fr6proc.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSergeantSerk%2Fr6proc?ref=badge_shield)
+
 Rainbow Six Siege player profile snapshotting and storing program.
 
 ## Description
@@ -22,3 +24,6 @@ r6proc.process_uuids(uuids)
 All Rights Reserved © 2020. No use without explicit permission of the owner/contributors.
 
 Note: This license will change sooner to relax rights and public usage.
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSergeantSerk%2Fr6proc.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSergeantSerk%2Fr6proc?ref=badge_large)
