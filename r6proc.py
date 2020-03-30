@@ -1,7 +1,7 @@
 import time
 import os.path
 import json
-from r6utilities import get_ticket, get_profile_uuid, get_profile_stats, get_ranked_stats, get_all_stats
+from r6utilities import get_ticket, get_profile_uuid, get_profile_stats, get_ranked_stats, get_all_stats, write_ranked_matches
 
 class r6proc():
     def __init__(self):
@@ -17,6 +17,9 @@ class r6proc():
         except IOError as e:
             print("Make sure config.json.example has been renamed to config.json with correct values.")
             raise e
+    
+    def process_ranked_history(self, uuids):
+        write_ranked_matches(uuids)
 
     def process_uuids(self, uuids):
         """
